@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title></title>
+ <link type="text/css" rel="stylesheet" href="css/materialize.css">
+
+</head>
+
+<body>
+ <form method="post" action="duomenucentras.php">
+
+ <fieldset>
+  <legend>Jūsų informacija</legend>
+
+   <div class="col s12">
+     Vardas:
+     <div class="input-field inline">
+     <input id="email_inline" type="email" class="validate">
+      </div>
+    </div>
+
+    <div class="col s12">
+      Pavardė:
+       <div class="input-field inline">
+       <input id="email_inline" type="email" class="validate">
+       </div>
+     </div>
+
+ </fieldset>
+
+ <fieldset>
+
+  <legend>Klausimai</legend>
+   <div>
+    <p>Kaip sužinojote apie mus?</p>
+     <select class="browser-default">
+       <option value="" disabled selected>Pasirinkite</option>
+       <option value="1">Google</option>
+       <option value="2">TV</option>
+       <option value="3">Rekomendavo draugas</option>
+     </select>
+   </div>
+
+  <p>Ar apsilankysite vėl?</p>
+  <div>
+    <label>
+      <input type="radio" value="yes" name="visit"/>
+      <span>Taip</span>
+     </label>
+   <label>
+     <input type="radio" value="no" name="visit"/>
+      <span>Ne</span>
+   </label>
+   <label>
+     <input type="radio" value="maybe" name="visit"/>
+      <span>Galbūt</span>
+    </label>
+  </div>
+
+  <form class="col s6">
+    <div class="input-field col s6">
+     <p>Ką manote apie kursą?</p>
+      <textarea id="textarea1" class="materialize-textarea"></textarea>
+      <label for="textarea1"></label>
+    </div>
+  </form>
+
+  <p>Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:</p>
+  <div>
+      <label>
+        <input type="checkbox" value="sharp"/>
+        <span>C#</span>
+      </label>
+   </div>
+  <div>
+  <label>
+        <input type="checkbox" value="java"/>
+        <span>Java</span>
+      </label>
+  </div>
+  <div>
+  <label>
+        <input type="checkbox" value="php"/>
+        <span>PHP</span>
+      </label>
+   </div>
+  <div>
+  <label>
+        <input type="checkbox" value="html"/>
+        <span>HTML</span>
+      </label>
+  </div>
+  <div>
+  <label>
+        <input type="checkbox" value="css"/>
+        <span>CSS</span>
+      </label>
+  </div>
+  <div>
+  <label>
+        <input type="checkbox" value="script"/>
+        <span>JavaScript</span>
+      </label>
+  </div>
+  <div>
+  <label>
+        <input type="checkbox" value="python"/>
+        <span>Python</span>
+      </label>
+  </div>
+  <div>
+  <label>
+        <input type="checkbox" value="ruby"/>
+        <span>Ruby</span>
+      </label>
+   </div>
+  <p/>
+
+<button class="btn waves-effect waves-light" type="submit" name="action">Siųsti
+    <i class="material-icons right"></i>
+  </button>
+
+ </fieldset>
+</form>
+
+ <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
+
+ </script>
+</body>
+</html>
